@@ -23,8 +23,7 @@ public class PersonalMySqlConnection {
         
         db = new DB_Generic();
         
-        db.openConnection("com.mysql.jdbc.Driver", "jdbc:mysql://jokerman.doesntexist.com:3306", "Jokerman", "DoubleScreen1");
-        //db.openConnection("com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306", "Jokerman", "DoubleScreen1");
+        db.openConnection("com.mysql.jdbc.Driver", "jdbc:mysql://<address>:3306", "<user>", "<password>");
 
         String sql = "Select * From sakila.actor";
         
